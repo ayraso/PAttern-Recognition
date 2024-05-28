@@ -84,10 +84,10 @@ print("> Test ediliyor.")
 # Modeli kullanarak test verilerini tahmin etme
 predictions = model.predict(test_features)
 print("> Test edildi.")
-# Confusion matrix oluşturun
+# Confusion matrix oluşturma
 cm = confusion_matrix(test_labels, predictions)
 
-# Confusion matrixi ısı haritası olarak görselleştirin
+# Confusion matrixi ısı haritası olarak görselleştirme
 sns.heatmap(cm, annot=True, fmt='d', cmap='YlGnBu')
 plt.title('Confusion Matrix')
 plt.xlabel('Predicted Label')
